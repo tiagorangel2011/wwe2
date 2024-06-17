@@ -1,0 +1,124 @@
+<style>
+  @keyframes lookatme {
+    from, to {transform: scale(0.95)}
+    50% { transform: scale(1.1)}
+  }
+</style>
+
+<div
+  style="
+    background-color: blue;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: lime;
+    font-family: Inter;
+    position: relative;
+  " class="anim"
+>
+  These are real, user-submitted ads. Add your own <a style="color: cyan" href="https://forms.reform.app/qSCZpV/ad-wwe2/bqcq5w"
+    >here</a
+  ><br />
+  <div class="results" style="margin-top: 5px;">
+    
+  <img
+    onclick="alert('INVEST IN WORSTWEBSITEEVER.COMMERCIAL-SYSTEM BITCOIN WEB3 COOL VERY GOOD!\nTHIS IS YOUR CHANGE TO WIN 10000 0 000 MILLION DOLLARS IN ONE MONTH!!!\nTO GRAB THIS SPECIAL OFFER, CLICK OK')"
+    src="https://cdn.glitch.global/d6ed4b3b-fdb5-47f0-a6a8-aec8fa43447f/9de3786b-6ce5-456b-9a65-3f110d9de3c7.image.png"
+    style="width: 350px; margin-top: 5px"
+  />
+  <img
+    onclick="alert('PLATAFORM123 SUPPORTS INVESTinWWW.COMMERCIAL-SYSTEMS.\nWE HAVE AN OFFER FOR YOU! JUST CLICK OK AND ITS YOUR CHANCE TO WIN 10000 MILLION DOLLARS IN ONE YEAR!!!\nCLICK OK NOW')"
+    src="https://cdn.glitch.global/d6ed4b3b-fdb5-47f0-a6a8-aec8fa43447f/ead34857-3b0e-4e77-a5b1-ffdb10fa7a6d.image.png?v=1659086201236"
+    style="width: 350px; margin-top: 5px"
+  />
+
+  <a href="https://www.meowmix.com/?ref=wwe2-ad"
+    ><img
+      src="https://i.pinimg.com/236x/46/6b/79/466b79e64e4907c2e62a89aa0cee31c0--boots-so-cute.jpg"
+      style="width: 119px"
+  /></a>
+  </div>
+  <button
+    style="
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 6px;
+      padding: 0px;
+      background-color: white;
+      border-radius: 10px;
+      border: none;
+      color: black;
+    "
+  >
+    X
+  </button>
+</div>
+
+<script>
+  const things = [
+    {
+    to: "https://www.meowmix.com/?ref=wwe2-ad",
+    src: "https://i.pinimg.com/236x/46/6b/79/466b79e64e4907c2e62a89aa0cee31c0--boots-so-cute.jpg",
+      width: "130px",
+      animate: "none"
+    },
+    {
+      to: "javascript:",
+      src: "https://cdn.glitch.global/d6ed4b3b-fdb5-47f0-a6a8-aec8fa43447f/ead34857-3b0e-4e77-a5b1-ffdb10fa7a6d.image.png",
+      width: "400px",
+      animate: "lookatme 2s infinite"
+    },
+    {
+      to: "javascript:",
+      src: "https://cdn.glitch.global/d6ed4b3b-fdb5-47f0-a6a8-aec8fa43447f/9de3786b-6ce5-456b-9a65-3f110d9de3c7.image.png",
+      width: "400px",
+      animate: "lookatme 2s infinite"
+    }
+  ]
+const loadThing = function () {
+  const els = [
+    things[Math.floor(Math.random() * things.length)],
+    things[Math.floor(Math.random() * things.length)],
+    things[Math.floor(Math.random() * things.length)],
+    things[Math.floor(Math.random() * things.length)]
+  ]
+  document.querySelector(".results").innerHTML = `
+  <a href="${els[0].to}" target="_blank">
+  <img
+    onclick="alert('The website you are about to visit is not made or endorsed by WWE2, and has been submitted by a visitor.')"
+    src="${els[0].src}"
+    style="width: ${els[0].width};animation: ${els[0].animate};"
+  />
+</a>
+
+<a href="${els[1].to}" target="_blank">
+  <img
+    onclick="alert('The website you are about to visit is not made or endorsed by WWE2, and has been submitted by a visitor.')"
+    src="${els[1].src}"
+    style="width: ${els[1].width};animation: ${els[1].animate};"
+  />
+</a>
+
+<a href="${els[2].to}" target="_blank">
+  <img
+    onclick="alert('The website you are about to visit is not made or endorsed by WWE2, and has been submitted by a visitor.')"
+    src="${els[2].src}"
+    style="width: ${els[2].width};animation: ${els[2].animate};"
+  />
+</a>
+
+<a href="${els[3].to}" target="_blank">
+  <img
+    onclick="alert('The website you are about to visit is not made or endorsed by WWE2, and has been submitted by a visitor.')"
+    src="${els[3].src}"
+    style="width: ${els[3].width};animation: ${els[3].animate};"
+  />
+</a>
+  `
+}
+
+loadThing();
+  
+  setInterval(loadThing, 5000)
+</script>
